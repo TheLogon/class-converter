@@ -1,0 +1,47 @@
+{
+	"name": "class-converter",
+	"displayName": "class-converter",
+	"publisher": "TheLogon",
+	"description": "",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.87.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.convertClass"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "class-converter.convertClass",
+				"title": "Convert Class"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "class-converter.convertClass",
+				"key": "ctrl+shift+r",
+				"mac": "cmd+shift+r",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.87.0",
+		"@types/mocha": "^10.0.6",
+		"@types/node": "18.x",
+		"eslint": "^8.56.0",
+		"typescript": "^5.3.3",
+		"@vscode/test-cli": "^0.0.6",
+		"@vscode/test-electron": "^2.3.9"
+	}
+}
