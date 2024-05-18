@@ -10,8 +10,8 @@ const vscode = require("vscode")
  */
 function activate(context) {
 	console.log('Congratulations, your extension "class-converter" is now active!')
-	let disposable = commands.registerCommand("extension.convertClass", () => {
-		const editor = window.activeTextEditor
+	let disposable = vscode.commands.registerCommand("class-converter.convertClass", () => {
+		const editor = vscode.window.activeTextEditor
 		if (!editor) {
 			return
 		}
