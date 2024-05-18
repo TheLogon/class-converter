@@ -24,8 +24,8 @@
 		"keybindings": [
 			{
 				"command": "class-converter.convertClass",
-				"key": "ctrl+shift+r",
-				"mac": "cmd+shift+r",
+				"key": "ctrl+shift+p",
+				"mac": "cmd+shift+p",
 				"when": "editorTextFocus"
 			}
 		]
