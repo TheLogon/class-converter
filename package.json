@@ -3,7 +3,7 @@
 	"displayName": "class-converter",
 	"publisher": "TheLogon",
 	"description": "",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.87.0"
 	},
